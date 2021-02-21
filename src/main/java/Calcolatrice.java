@@ -216,8 +216,16 @@ public class Calcolatrice extends JFrame implements ActionListener
                 break;
                 
             case "=":
+                int i = 0;
+                
                 lettura = Risultato.getText();
                salva = calc.operazione(lettura);
+               for(i = 1; salva.charAt(i) == '+' || salva.charAt(i) == '-' || salva.charAt(i) == '*' || salva.charAt(i) == '/' || i < salva.length() - 1;)
+               {
+                   salva = calc.operazione(salva);
+                   i++;
+               }
+               salva = calc.x(salva);
                Risultato.setText(salva);
                 break;
                 
