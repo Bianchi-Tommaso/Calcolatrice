@@ -220,6 +220,7 @@ public class Calcolatrice extends JFrame implements ActionListener
                 
                 lettura = Risultato.getText();
                salva = calc.operazione(lettura);
+               if(salva.length() != 1)
                for(i = 1; salva.charAt(i) == '+' || salva.charAt(i) == '-' || salva.charAt(i) == '*' || salva.charAt(i) == '/' || i < salva.length() - 1;)
                {
                    salva = calc.operazione(salva);

@@ -163,7 +163,7 @@ public class Calcolo
         {
             num1 = num1 - num2;
         }
-        else if(operatore == '÷')
+        else if(operatore == '/')
         {
             num1 = num1 / num2;
         }

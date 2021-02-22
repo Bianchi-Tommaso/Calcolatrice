@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Bianchi Tommaso
+ * @author Bianchi Tommaso 
  */
 public class ProgCalcolatrice {
 
